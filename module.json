@@ -3,9 +3,9 @@
   "title": "WoD Initiative Tracker",
   "description": "Панель управления инициативой для World of Darkness 20 (заявки -> действия, раунды). Совместимо с системой WoD20 от JohanFalt.",
   "type": "module",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "compatibility": {
-    "minimum": "14",
+    "minimum": "14.332",
     "verified": "14.370"
   },
   "authors": [
@@ -29,5 +29,5 @@
   "socket": false,
   "url": "https://github.com/RadSeraph/wod-initiative",
   "manifest": "https://github.com/RadSeraph/WoD-Initiative/releases/latest/download/module.json",
-  "download": "https://github.com/RadSeraph/WoD-Initiative/releases/download/v0.3.0/wod-initiative.zip"
+  "download": "https://github.com/RadSeraph/WoD-Initiative/releases/download/v0.3.1/wod-initiative.zip"
 }
