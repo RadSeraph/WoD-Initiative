@@ -1,0 +1,31 @@
+{
+  "WODINI": {
+    "PanelTitle": "Инициатива WoD",
+    "ButtonLabel": "Инициатива",
+    "AddActor": "Добавить актёра",
+    "Remove": "Убрать",
+    "RollInit": "Бросить инициативу",
+    "RerollInit": "Перебросить",
+    "StartCombat": "Бой",
+    "EndCombat": "Завершить бой",
+    "NextStage": "Следующий шаг",
+    "StageClaims": "Заявки",
+    "StageActions": "Действия",
+    "Round": "Раунд",
+    "Stage": "Стадия",
+    "Initiative": "Инициатива",
+    "NotRolled": "—",
+    "WaitingRolls": "Ожидание бросков инициативы у всех участников",
+    "ClaimsDeclared": "Все заявки заявлены",
+    "ActionsDone": "Все действия совершены",
+    "ChatDeclared": "{name}: действие заявлено",
+    "ChatDone": "{name}: действие совершено",
+    "ChatRound": "Начался раунд {round}!",
+    "ChatCombatStart": "Бой начался! Раунд 1. Стадия заявок.",
+    "ChatCombatEnd": "Бой завершён.",
+    "ChatRoll": "{name}: инициатива = {dex} + {wits} + {roll} = {total}",
+    "MultiActions": "Доп. действия",
+    "MultiActionsHint": "Количество дополнительных действий (каждое идёт с инициативой на 5 меньше предыдущего)",
+    "CurrentTurn": "Текущий ход"
+  }
+}

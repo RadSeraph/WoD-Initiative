@@ -1,0 +1,61 @@
+<div class="wod-ini-panel">
+  <div class="wod-ini-header">
+    <span>{{localize "WODINI.Round"}}: {{round}}</span>
+    <span class="wod-ini-status">{{stageLabel}}</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>{{localize "WODINI.Initiative"}}</th>
+        <th>Актёр</th>
+        <th>{{localize "WODINI.MultiActions"}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each rows}}
+      <tr data-actor-id="{{actorId}}" class="{{#if current}}current-turn{{/if}}">
+        <td class="num">{{initDisplay}}</td>
+        <td>{{name}}{{#if extraSlots}} <span class="wod-ini-slots">{{extraSlots}}</span>{{/if}}</td>
+        <td class="num">
+          <input type="number" name="extra-actions" value="{{extra}}" min="0" max="5"
+                 data-actor-id="{{actorId}}" title="{{localize "WODINI.MultiActionsHint"}}"
+                 {{#if combatActive}}disabled{{/if}} />
+        </td>
+        <td class="num">
+          {{#unless ../combatActive}}
+          <button type="button" class="roll-init" data-actor-id="{{actorId}}">
+            {{localize "WODINI.RollInit"}}
+          </button>
+          {{/unless}}
+          {{#if ../canRemove}}
+          <button type="button" class="remove-actor" data-actor-id="{{actorId}}" title="{{localize "WODINI.Remove"}}">✕</button>
+          {{/if}}
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <div class="wod-ini-footer">
+    <button type="button" class="add-actor">
+      <i class="fas fa-user-plus"></i> {{localize "WODINI.AddActor"}}
+    </button>
+    {{#if canStartCombat}}
+    <button type="button" class="start-combat">
+      <i class="fas fa-khanda"></i> {{localize "WODINI.StartCombat"}}
+    </button>
+    {{/if}}
+    {{#if combatActive}}
+    <button type="button" class="next-step">
+      <i class="fas fa-angle-right"></i> {{localize "WODINI.NextStage"}}
+    </button>
+    <button type="button" class="end-combat">
+      {{localize "WODINI.EndCombat"}}
+    </button>
+    {{/if}}
+  </div>
+
+  {{#if hint}}<div class="wod-ini-hint">{{hint}}</div>{{/if}}
+</div>

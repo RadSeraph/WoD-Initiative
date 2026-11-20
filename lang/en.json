@@ -1,0 +1,31 @@
+{
+  "WODINI": {
+    "PanelTitle": "WoD Initiative",
+    "ButtonLabel": "Initiative",
+    "AddActor": "Add actor",
+    "Remove": "Remove",
+    "RollInit": "Roll initiative",
+    "RerollInit": "Reroll",
+    "StartCombat": "Start combat",
+    "EndCombat": "End combat",
+    "NextStage": "Next step",
+    "StageClaims": "Claims",
+    "StageActions": "Actions",
+    "Round": "Round",
+    "Stage": "Stage",
+    "Initiative": "Initiative",
+    "NotRolled": "—",
+    "WaitingRolls": "Waiting for everyone to roll initiative",
+    "ClaimsDeclared": "All claims declared",
+    "ActionsDone": "All actions resolved",
+    "ChatDeclared": "{name}: action declared",
+    "ChatDone": "{name}: action resolved",
+    "ChatRound": "Round {round} begins!",
+    "ChatCombatStart": "Combat started! Round 1. Claims stage.",
+    "ChatCombatEnd": "Combat ended.",
+    "ChatRoll": "{name}: initiative = {dex} + {wits} + {roll} = {total}",
+    "MultiActions": "Extra actions",
+    "MultiActionsHint": "Number of extra actions (each acts at initiative -5 from the previous)",
+    "CurrentTurn": "Current turn"
+  }
+}

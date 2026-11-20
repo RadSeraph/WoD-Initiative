@@ -1,0 +1,67 @@
+.wod-ini-panel .wod-ini-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.wod-ini-panel .wod-ini-status {
+  font-weight: bold;
+  text-align: center;
+}
+
+.wod-ini-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.wod-ini-panel th,
+.wod-ini-panel td {
+  padding: 3px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.wod-ini-panel td.num {
+  text-align: center;
+}
+
+.wod-ini-panel tr.current-turn {
+  background: rgba(120, 180, 255, 0.25);
+  outline: 1px solid rgba(80, 140, 220, 0.6);
+}
+
+.wod-ini-panel button {
+  line-height: 1.2;
+  font-size: 12px;
+  margin: 1px;
+}
+
+.wod-ini-panel input[type="number"] {
+  width: 42px;
+  height: 22px;
+  text-align: center;
+}
+
+.wod-ini-panel .wod-ini-footer {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.wod-ini-panel .wod-ini-footer button {
+  flex: 1;
+}
+
+.wod-ini-hint {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.wod-ini-slots {
+  color: #666;
+  font-size: 11px;
+}
