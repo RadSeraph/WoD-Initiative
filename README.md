@@ -30,7 +30,7 @@
 
 ## Файлы
 
-- `module.json` — манифест (Foundry VTT v10–12)
+- `module.json` — манифест (Foundry VTT v14, build 370)
 - `wod-initiative.js` — логика и панель (Application)
 - `templates/initiative-panel.hbs` — шаблон панели
 - `styles/wod-initiative.css` — стили

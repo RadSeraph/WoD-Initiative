@@ -1,6 +1,5 @@
 /**
- * WoD Initiative Tracker — модуль для Foundry VTT (система WoD20, JohanFalt).
- *
+ * WoD Initiative Tracker — Foundry VTT v14 (build 370), система WoD20 (JohanFalt).
  * Инициатива = Ловкость (Dexterity) + Восприятие/Смекалка (Wits) + 1d10.
  * Бой состоит из раундов; каждый раунд делится на две стадии:
  *   1. Заявки (Claims)  — обход ОТ МЕНЬШЕЙ инициативы к БОЛЬШЕЙ.
