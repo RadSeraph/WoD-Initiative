@@ -20,7 +20,13 @@
 
 ## Установка
 
-Скопируйте папку модуля в `Data/Modules/wod-initiative` и включите в настройках мира. Требуется система [WoD20 от JohanFalt](https://github.com/JohanFalt/Foundry_WoD20). Значения Dexterity/Wits читаются из `actor.system` с перебором типовых путей (`attributes.dexterity.total/value` и т.п.) — если в вашей версии системы атрибуты лежат иначе, дополните списки путей в функции `readAttributes()` в `wod-initiative.js`.
+**Вариант 1 (рекомендуемый) — Install Module по URL.** Foundry VTT: Manage Modules → Install Modules → *Install Unique Module ID* / «by URL». Вставьте манифест, раздаваемый через GitHub Releases:
+
+`https://github.com/RadSeraph/WoD-Initiative/releases/latest/download/module.json`
+
+⚠️ Foundry блокирует загрузку файлов с `raw.githubusercontent.com` политикой Content-Security-Policy (установки «по raw-ссылке» всегда падают с ошибкой CSP). Поэтому манифест (`module.json`) и архив (`wod-initiative.zip`) опубликованы как ассеты релиза на домене `github.com`, который разрешён. При каждом новом релизе достаточно обновить ассеты — ссылка `/releases/latest/download/module.json` останется прежней.
+
+**Вариант 2 — вручную.** Скопируйте папку модуля в `Data/Modules/wod-initiative` (например, распаковав zip из релиза) и включите в настройках мира. Требуется система [WoD20 от JohanFalt](https://github.com/JohanFalt/Foundry_WoD20). Значения Dexterity/Wits читаются из `actor.system` с перебором типовых путей (`attributes.dexterity.total/value` и т.п.) — если в вашей версии системы атрибуты лежат иначе, дополните списки путей в функции `readAttributes()` в `wod-initiative.js`.
 
 ## Файлы
 
