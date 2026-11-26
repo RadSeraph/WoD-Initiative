@@ -1,43 +1,12 @@
 # WoD-Initiative
 
-Модуль для Foundry VTT по системе **World of Darkness 20** (WoD20): панель управления инициативой с стадиями заявок и действий, раундами и поддержкой дополнительных действий (multi-action).
-
-## Как это работает
-
-1. Откройте панель: кнопка 🎲 на панели боя (для GM) или из консоли: `WoDInitiative.open()`.
-2. Нажмите **«Добавить актёра»** и выберите актёров сцены.
-3. У каждого актёра нажмите **«Бросить инициативу»**: бросается `Dexterity + Wits + 1d10`, результат виден в чате и на панели.
-4. Когда инициатива брошена у всех, становится доступна кнопка **«Бой»**.
-5. **Стадия заявок** — обход от *меньшей* инициативы к *большей*. Кнопка «Следующий шаг» переключает участника; в чат пишется «*Имя*: действие заявлено».
-6. После всех заявок автоматически включается **стадия действий** — обход от *большей* инициативы к *меньшей*, с сообщениями «*Имя*: действие совершено».
-7. Когда действия заканчиваются, начинается **новый раунд**: счётчик на панели увеличивается, в чат падает «Начался раунд N!». Снова идёт стадия заявок.
-
-## Дополнительные действия (multi-action)
-
-В колонке «Доп. действия» можно указать число N (0–5). Тогда актёр имеет N+1 действий в раунде, и каждое следующее разрешается с инициативой **на 5 меньше** предыдущего (классическое правило WoD20): эффективные значения `base, base−5, base−10, …`. Каждое такое действие — отдельный шаг и в стадии заявок, и в стадии действий, поэтому чужие быстрые действия успевают вклиниться между вашими. На панели рядом с именем показывается список эффективных инициатив.
-
-Число доп. действий можно менять только до начала боя (или после его завершения).
-
-## Установка
-
-**Вариант 1 (рекомендуемый) — Install Module по URL.** Foundry VTT: Manage Modules → Install Modules → *Install Unique Module ID* / «by URL». Вставьте манифест, раздаваемый через GitHub Releases:
-
-`https://github.com/RadSeraph/WoD-Initiative/releases/latest/download/module.json`
-
-⚠️ Foundry блокирует загрузку файлов с `raw.githubusercontent.com` политикой Content-Security-Policy (установки «по raw-ссылке» всегда падают с ошибкой CSP). Поэтому манифест (`module.json`) и архив (`wod-initiative.zip`) опубликованы как ассеты релиза на домене `github.com`, который разрешён. При каждом новом релизе достаточно обновить ассеты — ссылка `/releases/latest/download/module.json` останется прежней.
-
-**Вариант 2 — вручную.** Скопируйте папку модуля в `Data/Modules/wod-initiative` (например, распаковав zip из релиза) и включите в настройках мира. Требуется система [WoD20 от JohanFalt](https://github.com/JohanFalt/Foundry_WoD20). Значения Dexterity/Wits читаются из `actor.system` с перебором типовых путей (`attributes.dexterity.total/value` и т.п.) — если в вашей версии системы атрибуты лежат иначе, дополните списки путей в функции `readAttributes()` в `wod-initiative.js`.
-
-## Файлы
-
-- `module.json` — манифест (Foundry VTT v14, build 370)
-- `wod-initiative.js` — логика и панель (Application)
-- `templates/initiative-panel.hbs` — шаблон панели
-- `styles/wod-initiative.css` — стили
-- `lang/ru.json`, `lang/en.json` — локализации
-
 ## Acknowledgements
 
 I would like to express my deepest gratitude to [**JohanFalt**.](https://github.com/JohanFalt/Foundry_WoD20)
 
 He was the creator of the core system for Foundry VTT, which served as the inspiration for my project. He was the one who opened the door for me to online Vampire: The Masquerade gaming. Without his work and enthusiasm, my module would likely never have seen the light of day.
+
+## Warning
+
+I’m just an ordinary user, not a programmer or a coding expert. But I really love the World of Darkness, I drive a lot and play. So I’d like to contribute a bit of value to those who might find it useful. 
+I don’t know how to program, but I can stubbornly push the neural network. Please don’t hold it against me for using slave labor of AI.
